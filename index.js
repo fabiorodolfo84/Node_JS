@@ -7,7 +7,7 @@ const app = express();
 app.set('view engine','ejs');
 
 app.get("/",(req, res) => {
-    res.render("principal/perfil") // comando para carregar aquivivo dentro de uma outra pasta.
+    res.render("principal/perfil") // comando para carregar aquivivo dentro de uma outra pasta...
 });
 
 app.listen(8080,()=>{
