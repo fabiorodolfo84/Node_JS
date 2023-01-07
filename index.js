@@ -7,8 +7,14 @@ const app = express();
 app.set('view engine','ejs');
 
 app.get("/",(req, res) => {
-    res.render("principal/perfil") // comando para carregar aquivivo dentro de uma outra pasta...
-});
+    let nome = "Fabio Rodolfo";
+    let lang = "Javascript";
+    res.render("index",{
+        nome: nome, 
+        lang: lang, 
+        empresa: "SnakeTattoo"});
+    });
+
 
 app.listen(8080,()=>{
     console.log("App rodando!");
